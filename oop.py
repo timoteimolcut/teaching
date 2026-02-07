@@ -16,7 +16,10 @@ class BankAccount:
 
     """not predefined"""
     def deposit(self, amount=100):# method
+        print(f"Start deposit: {self.balance}, {amount}")
         self.balance += amount
+        t.sleep(amount//20)
+        print(f"End deposit: {self.balance}")
         formatted_time = t.strftime('%Y-%m-%d %H:%M:%S', t.gmtime(time()))
         self.deposit_timestamps.append(formatted_time)
 
