@@ -1,0 +1,35 @@
+    1  ls
+    2  ls -l
+    3  ls -lh
+    4  cd
+    5  pwd
+    6  ls
+    7  mkdir
+    8  mkdir python
+    9  ls
+   10  ls -lh
+   11  ls -lha
+   12  ls -lh
+   13  cd
+   14  ls -lha
+   15  cd .
+   16  cd ..
+   17  pwd
+   18  ls -lha
+   19  cd
+   20  cd python
+   21  d
+   22  pwd
+   23  ls -lh
+   24  touch hot_chocolate.txt
+   25  ls -lh
+   26  ls -lha
+   27  touch hot_chocolate.txt
+   28  ls -lha
+   29  python
+   30  pip install python
+   31  sudo apt update && sudo apt upgrade -y
+   32  sudo apt install python3 python3-pip -y
+   33  python3 --version
+   34  python3
+   35  history
