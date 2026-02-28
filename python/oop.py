@@ -5,10 +5,13 @@ from time import time
 # Python generic class is the object in which BankAccount is found
 class BankAccount:
     """predefined, but overwritten"""
-    def __init__(self, owner_to_be_added="Alice", balance_to_be_added=123, deposit_timestamps=[]): #constructor
+    def __init__(self, owner_to_be_added="Alice", balance_to_be_added=123): #constructor
+        # deposit_timestamps=[]
         self.owner = owner_to_be_added
         self.balance = balance_to_be_added
         self.deposit_timestamps = [] #deposit_timestamps #property
+        self.withdraw_timestamps = [] #withdraw_timestamps #property
+
 
     """not predefined"""
     def deposit(self, amount=100): #method
@@ -24,7 +27,12 @@ class BankAccount:
         if self.balance < amount:
             print("Insufficient balance")
         else:
+            print(f"Start withdraw : {self.balance}, {amount}")
             self.balance -= amount
+            t.sleep(amount//5)
+            print(f"End withdraw : {self.balance}")
+            formatted_time = t.strftime('%Y-%m-%d %H:%M:%S', t.gmtime(time()))
+            self.withdraw_timestamps.append(formatted_time)
     
     def __str__(self): #to string
         times = ""
