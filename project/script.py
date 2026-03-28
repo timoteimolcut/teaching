@@ -1,4 +1,9 @@
 """
+EVERYTHING IS A SCRIPT UNTIL YOU IMPORT IT, 
+THEN IT'S A MODULE.
+"""
+
+"""
 importing area
 """
 
@@ -21,8 +26,7 @@ def fun2():
 
 """calling area - for main script
 """
-
-if __name__ == "__main__":
+if __name__ == "__main__": 
     print("Entering main script.")
     print(PI)
     print(f"this is {__name__}")
