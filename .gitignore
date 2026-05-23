@@ -31,4 +31,13 @@ htmlcov/
 .tox/
 .nox/
 .coverage
-.pytest_cache/   
+.pytest_cache/
+
+# Generated data outputs
+output.csv
+
+# Miscellaneous / scratch files
+misc/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
