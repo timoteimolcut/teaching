@@ -15,6 +15,6 @@ it_employees = df[df["Department"] == "IT"]
 print(it_employees)
 """
 
-df = pd.read_csv("employees.csv")
+df = pd.read_csv("data/employees.csv")
 print(df)
 # print(df.head())
