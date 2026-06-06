@@ -41,3 +41,6 @@ misc/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+#extra files
+multi_student_options.md
